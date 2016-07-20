@@ -6,6 +6,7 @@ const url = require('url');
 var srv = http.createServer(function(req, res){
 	console.log(req);
 	var p = url.parse(req.url);//href,search,query,pathname
+    console.log(p);
 
 	//demo  curl http://127.0.0.1:1234/fdsf/fds/f
 	if (p.pathname == '/a/b') {
